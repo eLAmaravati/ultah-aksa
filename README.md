@@ -1,6 +1,6 @@
 # Website Countdown Ulang Tahun Aksara Lazuardi
 
-{{<img src="src/img/screenshot-ultah-aksa-1.webp" alt="ultah Aksa">}}
+<img src="src/img/screenshot-ultah-aksa-1.webp" alt="ultah Aksa">
 
 Website hitung mundur menuju hari ulang tahun Raden Mas Aksara Lazuardi.
 
