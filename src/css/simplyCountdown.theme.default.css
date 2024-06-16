@@ -1,0 +1,37 @@
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    font-family: "Poppins", sans-serif;
+}
+.simply-countdown > .simply-section {
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    float: left;
+    margin: 15px;
+    /* background: #ccfbf1; */
+    background: linear-gradient(to top right, #065f46, #059669, #fbbf24);
+    border: 5px solid #fef3c7;
+    color: #ccfbf1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+    display: block;
+    text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 12px;
+}

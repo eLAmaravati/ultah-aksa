@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksara's Birthday</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Poppins&display=swap"
+      rel="stylesheet">
+    <!-- Countdown -->
+    <link rel="stylesheet" href="src/css/simplyCountdown.theme.default.css" />
+    <!-- Sylesheet -->
+    <link rel="stylesheet" href="src/css/output.css">
+  </head>
+
+  <body
+    class="h-svh overflow-x-hidden bg-teal-900 bg-[url('/src/img/bg-green-3-03.svg')] bg-cover bg-left bg-no-repeat">
+    <main class="w-screen bg-[url('/src/img/bg-white-04.svg')] bg-cover bg-right bg-no-repeat">
+      <div class="container py-24 grid grid-cols-9 content-center lg:h-screen">
+        <div class="relative col-span-9 place-self-start lg:col-span-5">
+          <img src="src/img/mobil-3.png" alt="Mobil" height="700" width="700" class="animate-custom-bounce">
+        </div>
+        <div class="col-span-9 pt-20 text-center place-self-center lg:col-span-4 lg:pl-10">
+          <p class="text-3xl text-teal-700 uppercase tracking-widest">🎉 Ulang Tahun</p>
+          <h1
+            class="font-londrina text-7xl font-black tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-teal-800 via-emerald-600 to-amber-400 lg:text-9xl">
+            Aksara <br>
+            <span class="block lg:-mt-6 ">Lazuardi</span>
+          </h1>
+          <p>Halo, ini adalah website countdown untuk menghitung mundur hari ulang tahunku. Sengaja dibuat Bunda karena
+            hari
+            kelahiranku sangatlah istimewa.</p>
+          <div class="simply-countdown flex flex-wrap justify-center"></div>
+
+        </div>
+
+        <!-- Music -->
+        <div class="audio__container">
+          <audio id="song" autoplay loop>
+            <source src="src/img/happy-birthday-to-you-piano-version-13976.mp3">
+          </audio>
+
+          <button type="button"
+            class="audio__button bg-amber-300 rounded-full text-teal-900 size-10 flex justify-center items-center ring-4 ring-teal-100 border-teal-100"
+            aria-label="Play music">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 audio__icon">
+              <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Script -->
+    <script src="src/js/script.js"></script>
+    <script src="src/js/simplyCountdown.min.js"></script>
+    <script>
+      simplyCountdown('.simply-countdown', {
+        year: 2024, // required
+        month: 9, // required
+        day: 23, // required
+        hours: 0, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: { //words displayed into the countdown
+          days: { singular: 'hari', plural: 'hari' },
+          hours: { singular: 'jam', plural: 'jam' },
+          minutes: { singular: 'menit', plural: 'menit' },
+          seconds: { singular: 'detik', plural: 'detik' }
+        },
+        refresh: 1000, //default refresh every 1s
+        sectionClass: 'simply-section', //section css class
+        amountClass: 'simply-amount', // amount css class
+        wordClass: 'simply-word', // word css class
+        zeroPad: false,
+        countUp: false, // enable count up if set to true
+      });
+    </script>
+  </body>
+
+</html>
