@@ -10,7 +10,8 @@ body {
   line-height: 1.5em;
 }
 
-.audio__icon {
+/* Audio */
+.audio--play {
   transform-origin: center center;
   color: #fff;
   animation: rotating 4s linear infinite;

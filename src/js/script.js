@@ -1,6 +1,6 @@
 const audioIcon = document.querySelector(".audio__icon");
 const song = document.querySelector("#song");
-song.volume = 0.1;
+song.volume = 0.5;
 let isPlaying = false;
 
 // Audio
@@ -13,12 +13,12 @@ function playAudio() {
 function toggleAudio() {
   if (isPlaying) {
     song.pause();
-    audioIcon.classList.remove("audio--circle");
-    audioIcon.classList.add("audio--circle");
+    audioIcon.classList.add("audio--play");
+    audioIcon.classList.remove("audio--play");
   } else {
     song.play();
-    audioIcon.classList.add("audio--circle");
-    audioIcon.classList.remove("audio--circle");
+    audioIcon.classList.remove("audio--play");
+    audioIcon.classList.add("audio--play");
   }
   isPlaying = !isPlaying;
 }
